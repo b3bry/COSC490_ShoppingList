@@ -1,0 +1,12 @@
+<%= form_for @item do |f| %>
+    <div>
+      <%= f.label :name %> <br>
+      <%= f.text_field :name %>
+    </div>
+    <div>
+      <%= f.hidden_field :list_id,:value => @list_id%>
+    </div>
+    <br>
+    <%= f.submit 'Add New Item', class: 'btn btn-primary'%>
+<% end %>
+
